@@ -1,8 +1,8 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import APP from './App/index';
+import APP from './App/index';
 ReactDOM.render(
-  <div></div>,
+  <APP/>,
   document.getElementById('app')
 );
