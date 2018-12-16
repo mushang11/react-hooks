@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "feature practice",
   "scripts": {
-    "dev": "webpack --config  webpack/webpack.common.js --mode production --progress"
+    "dev": "webpack --config  webpack/webpack.common.js --mode production --progress --watch"
   },
   "author": "weiqiang",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "7.0.0-beta.3",
