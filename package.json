@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "feature practice",
   "scripts": {
-    "dev": "webpack --config  webpack/webpack.common.js --mode production --progress --watch"
+    "dev": "webpack --config  webpack/webpack.common.js --mode production --progress"
   },
   "author": "weiqiang",
   "license": "ISC",

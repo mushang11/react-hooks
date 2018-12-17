@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack =require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: path.resolve(__dirname, '../views/index.js'),
@@ -27,9 +28,9 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template:'./index.html'
-  })],
+  }), new webpack.HotModuleReplacementPlugin()],
   devServer:{
-    host: '0.0.0.0',
+    hot: true,
     contentBase: path.join(__dirname, '../dist'),
     compress: true,
     port: 9000,
